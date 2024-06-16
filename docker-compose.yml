@@ -4,9 +4,9 @@ services:
     depends_on:
       - postgres
     environment:
-      HOMECHART_postgresql_hostname: postgres_homecharts
+      HOMECHART_postgresql_hostname: postgres
       HOMECHART_postgresql_password: aGuF962gp3Yr68rY
-      HOMECHART_postgresql_username: homecharts
+      HOMECHART_postgresql_username: postgres
     image: ghcr.io/candiddev/homechart:latest
     ports:
       - "3100:3000"
